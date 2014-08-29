@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
-    "preinstall": "npm install cheerio superagent && node pre-install.js > index.js"
+    "prepublish": "node pre-publish.js > index.js"
   },
   "keywords": [
     "html",
@@ -22,7 +22,7 @@
     "url": "https://github.com/hemanth/void-elements/issues"
   },
   "homepage": "https://github.com/hemanth/void-elements",
-  "dependencies": {
+  "devDependencies": {
     "cheerio": "^0.17.0",
     "superagent": "^0.18.2"
   }
