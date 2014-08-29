@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test.js",
-    "preinstall": "node pre-install.js > index.js"
+    "preinstall": "npm install cheerio superagent && node pre-install.js > index.js"
   },
   "keywords": [
     "html",
