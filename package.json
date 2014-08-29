@@ -4,7 +4,7 @@
   "description": "Array of \"void elements\" defined by the HTML specification.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js",
+    "test": "node test",
     "preinstall": "npm install cheerio superagent && node pre-install.js > index.js"
   },
   "keywords": [
