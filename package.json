@@ -1,0 +1,29 @@
+{
+  "name": "void-elements",
+  "version": "0.1.0",
+  "description": "Array of \"void elements\" defined by the HTML specification.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test.js",
+    "preinstall": "node pre-install.js > index.js"
+  },
+  "keywords": [
+    "html",
+    "void",
+    "elements"
+  ],
+  "repository": "hemanth/void-elements",
+  "author": "hemanth.hm",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hemanth/void-elements/issues"
+  },
+  "homepage": "https://github.com/hemanth/void-elements",
+  "dependencies": {
+    "cheerio": "^0.17.0",
+    "superagent": "^0.18.2"
+  }
+}
