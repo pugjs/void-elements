@@ -4,7 +4,7 @@
   "description": "Array of \"void elements\" defined by the HTML specification.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js",
+    "test": "node test",
     "prepublish": "node pre-publish.js > index.js"
   },
   "keywords": [
