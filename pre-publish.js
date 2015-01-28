@@ -13,7 +13,11 @@ http.get('http://www.w3.org/html/wg/drafts/html/master/syntax.html', function (r
                 .next()
                 .text()
                 .replace(/\s/gm,'')
-                .split(",");
+                .split(",")
+                .reduce(function (obj, code) {
+                  obj[code] = true;
+                  return obj;
+                }, {});
 
     console.log('/**');
     console.log(' * This file automatically generated from `pre-publish.js`.');
