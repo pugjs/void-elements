@@ -1,9 +1,9 @@
 void-elements
 ==============
 
-### Array of "void elements" defined by the HTML specification
+### Object of "void elements" defined by the HTML specification
 
-Exports an Array of "void element" node names as defined by the HTML spec.
+Exports an `Object` of "void element" node names as defined by the HTML spec.
 
 The list is programatically generated from the [latest W3C HTML draft](http://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements).
 
@@ -17,8 +17,8 @@ Usage
 ```js
 var voidElements = require('void-elements');
 
-assert(voidElements.indexOf('span') === -1, '<span> is not a void element');
-assert(voidElements.indexOf('img') !== -1, '<img> is a void element');
+assert(voidElements['span'], '<span> is not a void element');
+assert(voidElements['img'], '<img> is a void element');
 ```
 
 License
