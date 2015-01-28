@@ -13,7 +13,7 @@ superagent
                 .split(",");
 
     console.log('/**');
-    console.log(' * This file automatically generated from `build.js`.');
+    console.log(' * This file automatically generated from `pre-publish.js`.');
     console.log(' * Do not manually edit.');
     console.log(' */');
     console.log();
