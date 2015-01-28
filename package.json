@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/hemanth/void-elements",
   "devDependencies": {
-    "cheerio": "^0.18.0",
-    "superagent": "^0.21.0"
+    "cheerio": "^0.18.0"
   }
 }

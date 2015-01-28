@@ -1,10 +1,13 @@
-var cheerio = require('cheerio');
-var superagent = require('superagent');
+var cheerio = require('cheerio')
+  , http = require('http');
 
-superagent
-  .get('http://www.w3.org/html/wg/drafts/html/master/syntax.html#void-elements')
-  .end(function (err, res) {
-    var $ = cheerio.load(res.text);
+http.get('http://www.w3.org/html/wg/drafts/html/master/syntax.html', function (res) {
+  var str = '';
+  res.setEncoding('utf8');
+  res.on('data', function (buf) {
+    str += buf;
+  }).on('end', function () {
+    var $ = cheerio.load(str);
     var codes = $('dfn#void-elements')
                 .parent()
                 .next()
@@ -19,3 +22,4 @@ superagent
     console.log();
     console.log('module.exports = %s;', JSON.stringify(codes, null, 2));
   });
+});
