@@ -1,7 +1,7 @@
 void-elements
 ==============
 
-### Array of "void elements" defined by the HTML specification
+### Object of "void elements" defined by the HTML specification
 
 Exports an `Object` of "void element" node names as defined by the HTML spec.
 
