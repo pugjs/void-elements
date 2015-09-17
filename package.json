@@ -12,16 +12,16 @@
     "void",
     "elements"
   ],
-  "repository": "hemanth/void-elements",
+  "repository": "jadejs/void-elements",
   "author": "hemanth.hm",
   "engines": {
     "node": ">=0.10.0"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hemanth/void-elements/issues"
+    "url": "https://github.com/jadejs/void-elements/issues"
   },
-  "homepage": "https://github.com/hemanth/void-elements",
+  "homepage": "https://github.com/jadejs/void-elements",
   "devDependencies": {
     "cheerio": "^0.18.0"
   }
