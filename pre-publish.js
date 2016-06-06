@@ -1,12 +1,8 @@
-var cheerio = require('cheerio')
-  , http = require('http');
+var cheerio = require('cheerio');
+var request = require('request-promise');
 
-http.get('http://www.w3.org/html/wg/drafts/html/master/syntax.html', function (res) {
-  var str = '';
-  res.setEncoding('utf8');
-  res.on('data', function (buf) {
-    str += buf;
-  }).on('end', function () {
+request('https://w3c.github.io/html/syntax.html')
+  .then(function (str) {
     var $ = cheerio.load(str);
     var codes = $('dfn#void-elements')
                 .parent()
@@ -26,4 +22,3 @@ http.get('http://www.w3.org/html/wg/drafts/html/master/syntax.html', function (r
     console.log();
     console.log('module.exports = %s;', JSON.stringify(codes, null, 2));
   });
-});
