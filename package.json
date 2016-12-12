@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/jadejs/void-elements",
   "devDependencies": {
-    "cheerio": "^0.20.0",
-    "request-promise": "^3.0.0"
+    "cheerio": "^0.22.0",
+    "request": "^2.79.0",
+    "request-promise": "^4.1.1"
   }
 }
