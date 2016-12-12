@@ -12,6 +12,9 @@
     "void",
     "elements"
   ],
+  "files": [
+    "index.js"
+  ],
   "repository": "jadejs/void-elements",
   "author": "hemanth.hm",
   "engines": {
