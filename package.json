@@ -15,7 +15,7 @@
   "files": [
     "index.js"
   ],
-  "repository": "jadejs/void-elements",
+  "repository": "pugjs/void-elements",
   "author": "hemanth.hm",
   "engines": {
     "node": ">=0.10.0"
