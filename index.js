@@ -12,7 +12,6 @@ module.exports = {
   "hr": true,
   "img": true,
   "input": true,
-  "keygen": true,
   "link": true,
   "menuitem": true,
   "meta": true,
