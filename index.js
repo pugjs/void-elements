@@ -13,7 +13,6 @@ module.exports = {
   "img": true,
   "input": true,
   "link": true,
-  "menuitem": true,
   "meta": true,
   "param": true,
   "source": true,

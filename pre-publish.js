@@ -1,16 +1,21 @@
-var cheerio = require('cheerio');
-var request = require('request-promise');
+'use strict';
 
-request('https://w3c.github.io/html/syntax.html')
-  .then(function (str) {
-    var $ = cheerio.load(str);
-    var codes = $('dfn#void-elements')
-                .parent()
-                .next()
-                .text()
+const jsdom = require('jsdom');
+const request = require('request-promise');
+
+request('https://html.spec.whatwg.org/multipage/syntax.html').then(str => {
+  jsdom.env(str, (err, window) => {
+    if (err) {
+      throw err;
+    }
+    const document = window.document;
+    const codes = document.querySelector('dfn#void-elements')
+                .parentNode
+                .nextElementSibling
+                .textContent
                 .replace(/\s/gm,'')
                 .split(",")
-                .reduce(function (obj, code) {
+                .reduce((obj, code) => {
                   obj[code] = true;
                   return obj;
                 }, {});
@@ -21,4 +26,6 @@ request('https://w3c.github.io/html/syntax.html')
     console.log(' */');
     console.log();
     console.log('module.exports = %s;', JSON.stringify(codes, null, 2));
+    window.close();
   });
+});
