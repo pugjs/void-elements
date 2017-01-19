@@ -4,8 +4,9 @@
   "description": "Array of \"void elements\" defined by the HTML specification.",
   "main": "index.js",
   "scripts": {
+    "pretest": "node build.js > test/latest.js",
     "test": "node test",
-    "prepublish": "node pre-publish.js > index.js"
+    "update": "node build.js > index.js"
   },
   "keywords": [
     "html",
