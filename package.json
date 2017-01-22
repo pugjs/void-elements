@@ -10,7 +10,7 @@
   },
   "keywords": [
     "html",
-    "void",
+    "void-elements",
     "elements"
   ],
   "files": [
@@ -23,9 +23,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jadejs/void-elements/issues"
+    "url": "https://github.com/pugjs/void-elements/issues"
   },
-  "homepage": "https://github.com/jadejs/void-elements",
+  "homepage": "https://github.com/pugjs/void-elements",
   "devDependencies": {
     "jsdom": "^9.9.1"
   }
