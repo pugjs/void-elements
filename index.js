@@ -1,5 +1,5 @@
 /**
- * This file automatically generated from `pre-publish.js`.
+ * This file was automatically generated from `build.js`.
  * Do not manually edit.
  */
 

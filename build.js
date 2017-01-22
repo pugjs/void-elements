@@ -19,7 +19,7 @@ jsdom.env('https://html.spec.whatwg.org/multipage/syntax.html', (err, window) =>
               }, {});
 
   console.log(`/**
- * This file automatically generated from \`pre-publish.js\`.
+ * This file was automatically generated from \`build.js\`.
  * Do not manually edit.
  */
 
