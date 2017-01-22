@@ -18,11 +18,11 @@ jsdom.env('https://html.spec.whatwg.org/multipage/syntax.html', (err, window) =>
                 return obj;
               }, {});
 
-  console.log('/**');
-  console.log(' * This file automatically generated from `pre-publish.js`.');
-  console.log(' * Do not manually edit.');
-  console.log(' */');
-  console.log();
-  console.log('module.exports = %s;', JSON.stringify(codes, null, 2));
+  console.log(`/**
+ * This file automatically generated from \`pre-publish.js\`.
+ * Do not manually edit.
+ */
+
+module.exports = ${JSON.stringify(codes, null, 2)};`);
   window.close();
 });
