@@ -3,10 +3,11 @@
   "version": "3.1.0",
   "description": "Array of \"void elements\" defined by the HTML specification.",
   "main": "index.js",
+  "jsnext:main": "index.es.js",
   "scripts": {
-    "pretest": "node build.js > test/latest.js",
+    "pretest": "node build.js test/latest.js",
     "test": "node test",
-    "update": "node build.js > index.js"
+    "update": "node build.js index.js index.es.js:es"
   },
   "keywords": [
     "html",
@@ -14,7 +15,8 @@
     "elements"
   ],
   "files": [
-    "index.js"
+    "index.js",
+    "index.es.js"
   ],
   "repository": "pugjs/void-elements",
   "author": "hemanth.hm",
