@@ -1,0 +1,6 @@
+.npmignore
+.gitignore
+.travis.yml
+.editorconfig
+test/
+build.js
