@@ -3,6 +3,7 @@
   "version": "3.1.0",
   "description": "Array of \"void elements\" defined by the HTML specification.",
   "main": "index.js",
+  "typings": "types.d.ts",
   "jsnext:main": "index.es.js",
   "module": "index.es.js",
   "exports": {
@@ -23,7 +24,8 @@
   ],
   "files": [
     "index.js",
-    "index.es.js"
+    "index.es.js",
+    "types.d.ts"
   ],
   "repository": "pugjs/void-elements",
   "author": "hemanth.hm",
