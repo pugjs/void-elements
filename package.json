@@ -4,6 +4,13 @@
   "description": "Array of \"void elements\" defined by the HTML specification.",
   "main": "index.js",
   "jsnext:main": "index.es.js",
+  "module": "index.es.js",
+  "exports": {
+    ".": {
+      "require": "./index.js",
+      "import": "./index.es.js"
+    }
+  },
   "scripts": {
     "pretest": "node build.js test/latest.js",
     "test": "node test",
